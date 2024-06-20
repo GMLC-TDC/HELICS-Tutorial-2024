@@ -1,0 +1,35 @@
+{
+  "name": "DEMO",
+  "log_level": "warning",
+  "core_type": "zmq",
+  "period": 60,
+  "uninterruptible": false,
+  "terminate_on_error": true,
+  "wait_for_current_time_update": true,
+  "publications": [
+    {
+      "key": "test_publication",
+      "type": "double",
+      "unit": "A",
+      "global": true
+    }
+  ],
+  "subscriptions": [
+    {
+      "name": "sub1",
+      "key": "AnotherFederate/test_subscription",
+      "type": "double",
+      "unit": "V",
+      "global": true,
+      "connection_optional": true
+    }
+  ],
+  "endpoints": [
+    {
+      "key": "test_endpoint",
+      "type": "double",
+      "unit": "W",
+      "global": true
+    }
+  ]
+}
