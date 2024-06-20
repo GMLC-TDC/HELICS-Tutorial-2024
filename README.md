@@ -7,7 +7,7 @@ This is a online remote demonstration. So there's no installation required.
 
 The tutorial has 3 parts:
 
-1. Running the iplementation we saw before.
+1. Running the minimum API calls you will need to know in `demo.py`.
 2. A simple value exchange that sends pi (i.e. 3.14...) back and forth between two federates. To run it start both the notebooks in that folder simultaneously and go back and forth.
 3. An example transmission-distribution exchange between PyPower and OpenDSS via OpenDSSdirect. Similar to piexchange, this requires starting two notebooks simultaneously that each setup a federate and then interact via HELICS.
 
