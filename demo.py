@@ -11,8 +11,8 @@ input_ID = h.helicsFederateGetInputByTarget(fed, "AnotherFederate/test_subscript
 pub_ID = h.helicsFederateGetPublication(fed, "test_publication")
 endpoint_ID = h.helicsFederateGetEndpoint(fed, "test_endpoint")
 
-input_key = h.helicsSubscriptionGetTarget(input_ID)
-pub_key = h.helicsPublicationGetKey(pub_ID)
+input_key = h.helicsInputGetTarget(input_ID)
+pub_key = h.helicsPublicationGetName(pub_ID)
 endpoint_name = h.helicsEndpointGetName(endpoint_ID)
 
 h.helicsFederateEnterExecutingMode(fed)
