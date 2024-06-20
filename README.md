@@ -26,12 +26,8 @@ If you are interested in running this demonstration on your computer, you can fo
 ```
 git clone https://github.com/GMLC-TDC/HELICS-Tutorial-2024
 cd HELICS-Tutorial-2024
-conda install jupyter
-conda install nb_conda
-conda env create
-conda init bash # use your appropriate shell here
-conda activate helics-environment
-jupyter notebook
+conda env create --name helics-environment --file=environments.yml
+jupyter lab
 ```
 
 You can check if everything has been installed correctly by running the following to start Python:
